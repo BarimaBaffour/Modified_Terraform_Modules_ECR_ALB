@@ -19,6 +19,9 @@ variable "CLUSTER_ARN" {
 variable "SERVICE_ROLE_ARN" {
 }
 
+variable "OVERWRITE_COMMAND"{
+}
+
 variable "DESIRED_COUNT" {
 }
 
