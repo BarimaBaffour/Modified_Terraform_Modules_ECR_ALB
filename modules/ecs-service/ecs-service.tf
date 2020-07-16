@@ -30,6 +30,7 @@ data "template_file" "ecs-service" {
     CPU_RESERVATION     = var.CPU_RESERVATION
     MEMORY_RESERVATION  = var.MEMORY_RESERVATION
     LOG_GROUP           = var.LOG_GROUP
+    OVERWRITE_COMMAND   = var.OVERWRITE_COMMAND
   }
 }
 
