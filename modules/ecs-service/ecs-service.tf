@@ -22,6 +22,7 @@ data "template_file" "ecs-service" {
   template = file("${path.module}/ecs-service.json")
 
   vars = {
+    OVERWRITE_COMMAND   = var.OVERWRITE_COMMAND
     APPLICATION_NAME    = var.APPLICATION_NAME
     APPLICATION_PORT    = var.APPLICATION_PORT
     APPLICATION_VERSION = var.APPLICATION_VERSION
@@ -30,7 +31,7 @@ data "template_file" "ecs-service" {
     CPU_RESERVATION     = var.CPU_RESERVATION
     MEMORY_RESERVATION  = var.MEMORY_RESERVATION
     LOG_GROUP           = var.LOG_GROUP
-    OVERWRITE_COMMAND   = var.OVERWRITE_COMMAND
+    
   }
 }
 

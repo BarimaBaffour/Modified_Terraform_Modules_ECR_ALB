@@ -11,6 +11,7 @@ variable "VPC_SUBNETS" {
 }
 
 variable "DOMAIN" {
+  default = ""
 }
 
 variable "DEFAULT_TARGET_ARN" {

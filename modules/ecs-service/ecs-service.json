@@ -10,7 +10,6 @@
       "name": "${APPLICATION_NAME}",
       "command": "${OVERWRITE_COMMAND}"
     }
-
     ],
     "mountPoints": [],
     "portMappings" : [
