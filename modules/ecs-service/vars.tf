@@ -44,8 +44,6 @@ variable "HEALTHCHECK_MATCHER" {
 variable "CPU_RESERVATION" {
 }
 
-variable "OVERWRITE_COMMAND"{
-}
 
 variable "MEMORY_RESERVATION" {
 }
