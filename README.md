@@ -1,3 +1,10 @@
+
+# Modified_Terraform_Modules_ECR_ALB"
+
+
+
+
+
 # terraform-modules
 repository of useful terraform modules
 
@@ -37,6 +44,7 @@ module "my-service" {
   LOG_GROUP           = "my-log-group"
   DESIRED_COUNT       = 2
   ALB_ARN             = "${module.my-alb.alb_arn}"
+  OVERWRITE_COMMAND   = "custom command"
 }
 ```
 
