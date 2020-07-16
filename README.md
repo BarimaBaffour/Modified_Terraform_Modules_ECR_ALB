@@ -30,7 +30,7 @@ module "my-ecs" {
 ## ECS Service
 ```
 module "my-service" {
-  source              = "github.com/in4it/terraform-modules//modules/ecs-service"
+  source              = "github.com/lyx999000/Modified_Terraform_Modules_ECR_ALB/ecs-service"
   VPC_ID              = "vpc-id"
   APPLICATION_NAME    = "my-service"
   APPLICATION_PORT    = "8080"
@@ -51,7 +51,7 @@ module "my-service" {
 ## ALB
 ```
 module "my-alb" {
-  source             = "github.com/in4it/terraform-modules/modules/alb"
+  source             = "github.com/lyx999000/Modified_Terraform_Modules_ECR_ALB/alb"
   VPC_ID             = "vpc-id"
   ALB_NAME           = "my-alb"
   VPC_SUBNETS        = "subnetId-1,subnetId-2"
@@ -65,7 +65,7 @@ module "my-alb" {
 ## ALB Rule
 ```
 module "my-alb-rule" {
-  source             = "github.com/in4it/terraform-modules/modules/alb-rule"
+  source             = "github.com/lyx999000/Modified_Terraform_Modules_ECR_ALB/alb-rule"
   LISTENER_ARN       = "${module.my-alb.http_listener_arn}"
   PRIORITY           = 100
   TARGET_GROUP_ARN   = "${module.my-service.target_group_arn}"
