@@ -22,7 +22,6 @@ data "template_file" "ecs-service" {
   template = file("${path.module}/ecs-service.json")
 
   vars = {
-    OVERWRITE_COMMAND   = var.OVERWRITE_COMMAND
     APPLICATION_NAME    = var.APPLICATION_NAME
     APPLICATION_PORT    = var.APPLICATION_PORT
     APPLICATION_VERSION = var.APPLICATION_VERSION

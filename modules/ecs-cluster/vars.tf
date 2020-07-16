@@ -42,7 +42,7 @@ variable "ENABLE_SSH" {
   default = false
 }
 
-variable "SSH_SG" {
-  default = ""
-}
+#variable "SSH_SG" {
+#  default = ""
+#}
 

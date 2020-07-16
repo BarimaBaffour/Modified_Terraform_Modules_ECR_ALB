@@ -5,12 +5,6 @@
     "cpu": ${CPU_RESERVATION},
     "memoryReservation": ${MEMORY_RESERVATION},
     "essential": true,
-    "containerOverrides": [
-    {
-      "name": "${APPLICATION_NAME}",
-      "command": "${OVERWRITE_COMMAND}"
-    }
-    ],
     "mountPoints": [],
     "portMappings" : [
       {
